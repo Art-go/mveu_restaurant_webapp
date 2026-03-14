@@ -1,4 +1,4 @@
-﻿namespace Data.EF;
+﻿namespace Data;
 
 public class Class1
 {
