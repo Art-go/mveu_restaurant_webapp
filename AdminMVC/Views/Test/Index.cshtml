@@ -1,0 +1,15 @@
+﻿@{
+    ViewData["Title"] = "Test page";
+}
+
+<div class="text-center">
+    <form method="post">
+        <label for="logString">Строчка для логгирования:</label>
+        <input type="text" id="logString" name="logString"/><br/>
+        <button type="submit">Отправить</button>
+    </form>
+    @if (ViewBag.logString != null)
+    {
+        <p>Строка "@ViewBag.logString" залогированна!</p>
+    }
+</div>
