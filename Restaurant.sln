@@ -12,6 +12,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdminMVC", "AdminMVC\AdminM
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logic", "Logic\Logic.csproj", "{4F5BD53D-85EB-45E7-83F4-AD9A0FBF365E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data.EF", "Data.EF\Data.EF.csproj", "{F2168A60-A66E-4671-8711-76F4ADF37784}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -42,5 +44,7 @@ Global
 		{4F5BD53D-85EB-45E7-83F4-AD9A0FBF365E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4F5BD53D-85EB-45E7-83F4-AD9A0FBF365E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4F5BD53D-85EB-45E7-83F4-AD9A0FBF365E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2168A60-A66E-4671-8711-76F4ADF37784}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2168A60-A66E-4671-8711-76F4ADF37784}.Debug|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 EndGlobal
