@@ -1,0 +1,8 @@
+﻿namespace Data;
+
+public class Category
+{
+    public int Id { get; set; }
+    public string Name { get; set; } = string.Empty;
+    public virtual ICollection<Dish> Dishes { get; } = new List<Dish>();
+}

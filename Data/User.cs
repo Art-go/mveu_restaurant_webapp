@@ -2,7 +2,7 @@
 
 namespace Data;
 
-public class User : IdentityUser
+public class User : IdentityUser<Guid>
 {
-    public string Name { get; set; }
+    public string Name { get; set; } = string.Empty;
 }
