@@ -38,7 +38,8 @@ public class AppDbContext: IdentityDbContext<User, IdentityRole<Guid>, Guid>
 
         builder.Entity<Dish>()
             .Property(d => d.Price)
-            .HasPrecision(10, 2);
+            .HasPrecision(10, 2)
+            .IsRequired();
 
         builder.Entity<DailyMenu>()
             .HasIndex(dm => dm.Date)
@@ -77,7 +78,7 @@ public class AppDbContext: IdentityDbContext<User, IdentityRole<Guid>, Guid>
             .HasOne(bi => bi.Booking)
             .WithMany(b => b.Items)
             .HasForeignKey(bi => bi.BookingId)
-            .OnDelete(DeleteBehavior.Restrict);
+            .OnDelete(DeleteBehavior.Cascade);
 
     }
 }
